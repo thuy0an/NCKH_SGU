@@ -1,7 +1,7 @@
 ### **Các thuật ngữ gặp trong việc tìm hiểu đề tài**
 
 ### **Classification**
-**Classification (Bài toán phân lớp)**: Bài toán phân lớp là quá trình phân lớp một đối tượng dữ liệu vào một hay nhiều lớp đã cho trước nhờ một mô hình phân lớp
+**Classification (Bài toán phân lớp)**: Bài toán phân lớp là quá trình phân lớp một đối tượng dữ liệu vào một hay nhiều lớp đã cho trước nhờ một mô hình phân lớp. Nhiệm vụ của bài toán phân lớp là cần tìm một mô hình phần lớp để khi có dữ liệu mới thì có thể xác định được dữ liệu đó thuộc vào phân lớp nào.
 
 ### **Sentiment Analysis**
 **Sentiment Analysis (Phân tích cảm xúc)**: Phân tích cảm xúc là quy trình mà dữ liệu được trích xuất từ ý kiến, đánh giá và cảm xúc của con người từ **văn bản** liên quan đến các thực thể, sự kiện. Trong quá trình ra quyết định, ý kiến của người khác có ảnh hưởng đến sự tiện lợi của khách hàng, giúp họ đưa ra các quyết định liên quan đến mua sắm trực tuyến, chọn sự kiện, sản phẩm hoặc thực thể. Nhiệm vụ của bài toán phân lớp là cần tìm một mô hình phần lớp để khi có dữ liệu mới thì có thể xác định được dữ liệu đó thuộc vào phân lớp nào.
