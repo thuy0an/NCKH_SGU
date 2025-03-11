@@ -28,7 +28,7 @@ Chuyển mỗi câu thành một vector đếm số lần xuất hiện của t�
 | "This movie is amazing" | 0 | 0    | 1    | 1     | 1  | 1       |
 
 ### ** Các phương pháp phân tích cảm xúc**
-**Chia thành 3 nhóm**
+**Chia thành 3 nhóm**  
 -Mô hình dựa trên quy tắc: dùng từ điển cảm xúc  
 -Mô hình machine learning: dùng thuật toán ML để học dữ liệu  
 -Mô hình deep learning: dùng mạng neuron sâu  
