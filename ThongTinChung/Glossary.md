@@ -9,12 +9,11 @@
 ### **NLP (Natural Language Processing)**
 **NLP (xử lý ngôn ngữ tự nhiên)**: lĩnh vực cảu AI kết hợp giữa ngôn ngữ học và học máy để giúp máy tính hiểu, phân tích, tạo ra và phản hồi ngôn ngữ con người một cách tự động
 
-### **BoW (Bag of Words)**
-**BoW (túi từ)**: là một kỹ thuật trong xử lý ngôn ngữ tự nhiên (NLP) để biểu diễn văn bản dưới dạng một tập hợp các từ mà không quan tâm đến ngữ pháp hoặc vị trí của từ trong câu.
-
 ### **Transformer**
 **Transformer**: kiến trúc mạng nơ-ron, được thiết kế để xử lý dữ liệu chuỗi, đặc biệt là xử lý ngôn ngữ tự nhiên.
 
+### **BoW (Bag of Words)**
+**BoW (túi từ)**: là một kỹ thuật trong xử lý ngôn ngữ tự nhiên (NLP) để biểu diễn văn bản dưới dạng một tập hợp các từ mà không quan tâm đến ngữ pháp hoặc vị trí của từ trong câu.
 **Cách hoạt động**
 VD có 2 câu: "I love  this movie" và "This movie is amazing"
 - Bước 1: xây dựng danh sách từ vựng
