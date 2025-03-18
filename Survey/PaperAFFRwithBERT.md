@@ -12,11 +12,12 @@
 - **Loss**: 0.5433  
 
 ## Kết quả chính
-- Dùng fine-tuning BERT để phân loại sentiment.  
-- Chia dataset thành ba nhóm: training groups, validating groups, testing groups (7:2:1)
+- Trích xuất đặc trưng bằng Word cloud, xử lý các dữ liệu thừa và loại bỏ các dữ liệu không cần thiết
+- Tạo cột mới là Combo (kết hợp giữa summary và texxt)
 - Tập trung vào xử lý các thông tin với text là English
-- Xử lý dữ liệu, bỏ giá trị trùng lặp.  
-- Chưa kiểm tra trên tập dữ liệu khác.
+- Chia dataset thành ba nhóm: training groups, validating groups, testing groups (7:2:1)
+- Dùng fine-tuning BERT để phân loại sentiment.  
 
 ## Hạn chế
 - Không có so sánh với mô hình khác.
+- - Chưa kiểm tra trên tập dữ liệu khác.
