@@ -36,28 +36,24 @@ Bảng này giúp chúng ta hiểu cách mô hình phân loại đúng hay sai. 
 
 
 ## 3. Công thức tính các metric
+
 - **Accuracy (Độ chính xác)**  
-<img src="https://latex.codecogs.com/svg.latex?Accuracy%20%3D%20%5Cfrac%7BTP%20&plus;%20TN%7D%7BTP%20&plus;%20TN%20&plus;%20FP%20&plus;%20FN%7D" />
+  $$Accuracy = \frac{TP + TN}{TP + TN + FP + FN}$$  
 
 - **Precision (Độ chính xác theo lớp dương)**  
-<img src="https://latex.codecogs.com/svg.latex?Precision%20%3D%20%5Cfrac%7BTP%7D%7BTP%20&plus;%20FP%7D" />
+  $$Precision = \frac{TP}{TP + FP}$$  
 
 - **Recall (Khả năng phát hiện mẫu dương - Độ phủ)**  
-<img src="https://latex.codecogs.com/svg.latex?Recall%20%3D%20%5Cfrac%7BTP%7D%7BTP%20&plus;%20FN%7D" />
+  $$Recall = \frac{TP}{TP + FN}$$  
 
 - **F1-score (Trung bình hài hòa giữa Precision và Recall)**  
-<img src="https://latex.codecogs.com/svg.latex?F1%20%3D%202%20%5Ctimes%20%5Cfrac%7BPrecision%20%5Ctimes%20Recall%7D%7BPrecision%20&plus;%20Recall%7D" />
-
+  $$F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall}$$  
 
 - **AUC-ROC (Đánh giá khả năng phân biệt giữa hai lớp)**  
-  - **True Positive Rate (TPR - Sensitivity/Recall)**  
-<img src="https://latex.codecogs.com/svg.latex?TPR%20%3D%20%5Cfrac%7BTP%7D%7BTP%20&plus;%20FN%7D" />
-
-  - **False Positive Rate (FPR - 1-Specificity)**
-  <img src="https://latex.codecogs.com/svg.latex?FPR%20%3D%20%5Cfrac%7BFP%7D%7BFP%20&plus;%20TN%7D" />
-
-- **Loss Function (Hàm mất mát)**  
-<img src="https://latex.codecogs.com/svg.latex?L%20%3D%20-%5Cfrac%7B1%7D%7Bm%7D%20%5Csum_%7Bi%3D1%7D%5Em%20%5B%20y_i%20log%28%5Chat%7By%7D_i%29%20&plus;%20%281-y_i%29%20log%281-%5Chat%7By%7D_i%29%20%5D" />
+  - **True Positive Rate (TPR - Sensitivity/Recall):**  
+    $$TPR = \frac{TP}{TP + FN}$$  
+  - **False Positive Rate (FPR - 1-Specificity):**  
+    $$FPR = \frac{FP}{FP + TN}$$  
 
 
 
