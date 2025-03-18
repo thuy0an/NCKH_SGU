@@ -11,23 +11,23 @@ Việc hiểu được đánh giá của khách hàng giúp doanh nghiệp cải
 **Thông tin:** Bao gồm hơn 500.000 đánh giá thực phẩm trên Amazon, gồm văn bản đánh giá, số sao và trạng thái tích cực/ tiêu cực/ trung lập.
 
 ## 4. Phương pháp nghiên cứu  
-- **Mô hình Machine Learning thử nghiệm:**
+### Mô hình Machine Learning thử nghiệm  
 - Logistic Regression  
 - Support Vector Machine (SVM)  
 - Linear Regression
 - Naive Bayes
 - VADER  
-- **Tiền xử lý dữ liệu**  
+### Tiền xử lý dữ liệu
 - Loại bỏ các dữ liệu thừa, các cột không cần thiết trong việc phân tích, các dữ liệu thiếu
 - Loại bỏ dữ liệu trung lặp (điểm 3)
 - Sử dụng BoW hoặc TF-IDF trích xuất đặc trưng (nếu có thể)
-- **Metrics đánh giá:**
+### Metrics đánh giá mô hình
 - Accuracy
 - Percision
 - Recall
 - F1-Score
 
-## 5. Công nghệ sử dụng  
+### Công nghệ sử dụng
 - **Ngôn ngữ:** Python  
 - **Thư viện chính:**  
 - `sklearn`, `NLTK`, `seaborn`, `matplotlib`, `pandas`, `numpy`  
