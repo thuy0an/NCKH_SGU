@@ -1,4 +1,4 @@
-# Tên dự án: User Sentiment Analysis on Product Reviews Using RoBERTa
+# Tên dự án: User Sentiment Analysis on Product Reviews 
 Tên thành viên:
 | Họ và Tên       | Mã số sinh viên | Số điện thoại  | Email                         |
 |-----------------|---------------|---------------|------------------------------|
