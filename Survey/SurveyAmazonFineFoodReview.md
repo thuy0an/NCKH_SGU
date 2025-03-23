@@ -1,25 +1,22 @@
-# Survey for Amazon Fine Food Review using BERT Model
+# Survey for Amazon Fine Food Review
 
 ## Thông tin bài báo
 
-\- Tác giả: Không rõ (Dựa trên tài liệu IRJET)
+\- Tác giả: Vijay Bhati, Jayveer Kher
 
-\- Năm: Không có thông tin cụ thể
+\- Năm: 2019
 
-\- Nguồn: International Research Journal of Engineering and Technology
-(IRJET)
+\- Nguồn: IRJET (International Research Journal of Engineering and Technology)
 
-\- Mô hình: BERT
+\- Mô hình: Naïve Bayes, SVM (Support Vector Machine), K-Means Clustering
 
 \- Dataset: Amazon Fine Food Reviews
 
-\- Link: Không có sẵn trong tài liệu
+\- Link: [Không có sẵn trong tài liệu](https://scholar.google.com/scholar?hl=vi&as_sdt=0%2C5&q=Survey+for+Amazon+Fine+Food+Reviews&btnG=)
 
 ## Hiệu suất mô hình
 
-\- Accuracy: Không có thông tin cụ thể
-
-\- Loss: Không có thông tin cụ thể
+\- Logistic Regression provides the best sentimental analysis result.
 
 ## Kết quả chính
 
