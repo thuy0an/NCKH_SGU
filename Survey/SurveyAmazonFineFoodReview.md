@@ -12,7 +12,7 @@
 
 \- Dataset: Amazon Fine Food Reviews
 
-\- Link: [Không có sẵn trong tài liệu](https://scholar.google.com/scholar?hl=vi&as_sdt=0%2C5&q=Survey+for+Amazon+Fine+Food+Reviews&btnG=)
+\- Link: https://scholar.google.com/scholar?hl=vi&as_sdt=0%2C5&q=Survey+for+Amazon+Fine+Food+Reviews&btnG=
 
 ## Hiệu suất mô hình
 
