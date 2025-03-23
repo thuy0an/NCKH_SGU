@@ -6,6 +6,7 @@
 |-------------------------------------------------|----------------------------------------------|------------------------------------------------|---------------------------------|---------------|-------------------------------------------------------------------------------------------------|-----------------------------|
 | AFFR with BERT Model                            | Xinyue Zhao <br> Yuandong Sun               | Columbia University <br> Los Angeles          | BERT                            | 2022          | Accuracy = 79.82% <br>Loss = 0.5433| Sentiment Classification   |
 | Sentiment Classification for AFFR Using PySpark | T.R. Aravidan <br> Vigneshwar C.N. <br> Suganeshwari Gopalswamy | Recent Developments in Electronics and Communication Systems | Logistic Regression <br> Naive Bayes | 2023          | **Logistic Regression:** <br>Accuracy = 87.61%<br> Precision = 86.48% <br>Recall = 88.21% <br>F1-Score = 87.23%. <br> **Naive Bayes:** <br>Accuracy = 84.92%<br>Precision = 81.27%<br>Recall = 83.92% <br>F1-Score=82.67%<br>| Sentiment Classification   |
+| Effective Opinion Words Extraction for Food Reviews | Tran et al. | Can Tho University | Decision Tree <br> Random Forest <br> Gradient Boosting | 2020          | **Decision Tree:** <br>Accuracy = 75.20%<br>**Random Forest:** <br>Accuracy = 82.10%<br>**Gradient Boosting Classifier:** <br>Accuracy = 84.50% | Sentiment Classification   |
 
 ## 2. Chi Tiết Mô Hình  
 
