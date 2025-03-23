@@ -16,7 +16,7 @@ Việc hiểu được đánh giá của khách hàng giúp doanh nghiệp cải
 - Support Vector Machine (SVM)  
 - Linear Regression
 - Naive Bayes
-- VADER  
+
 ### Tiền xử lý dữ liệu
 - Loại bỏ các dữ liệu thừa, các cột không cần thiết trong việc phân tích, các dữ liệu thiếu
 - Loại bỏ dữ liệu trung lặp (điểm 3)
