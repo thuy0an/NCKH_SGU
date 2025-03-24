@@ -4,7 +4,7 @@
 ## Thông tin bài báo
 - **Tác giả:** Kartikay Thakkar, Sidharth Sharma, Ujjwal Chhabra, Charu Gupta
 - **Năm:** 2020
-- **Nguồn:** International Journal of Scientific Research & Engineering Trends (IJSRET)
+- **Nguồn:** Bhagwan Parshuram Institute of Technology, Guru Gobind Singh Indraprastha University (GGSIPU), Delhi, India
 - **Mô hình:** Logistic Regression
 - **Dataset:** Amazon Fine Food Reviews
 - **Link:** [Sentimental Analysis on Amazon Fine Food Reviews](https://scholar.google.com/scholar?hl=vi&as_sdt=0%2C5&q=sentimental+analysis+on+amazon+fine+food+review&btnG=)
