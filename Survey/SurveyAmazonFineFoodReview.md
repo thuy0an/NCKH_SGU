@@ -1,4 +1,4 @@
-# Survey for Amazon Fine Food Review
+# Survey for Amazon Fine Food Reviews
 
 ## Thông tin bài báo
 
@@ -12,7 +12,7 @@
 
 \- Dataset: Amazon Fine Food Reviews
 
-\- Link: https://scholar.google.com/scholar?hl=vi&as_sdt=0%2C5&q=Survey+for+Amazon+Fine+Food+Reviews&btnG=
+\- Link: [Survey for Amazon Fine Food Reviews](https://scholar.google.com/scholar?hl=vi&as_sdt=0%2C5&q=Survey+for+Amazon+Fine+Food+Reviews&btnG=)
 
 ## Hiệu suất mô hình
 
