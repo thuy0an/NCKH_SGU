@@ -7,11 +7,10 @@
 - **Nguồn:** International Journal of Scientific Research & Engineering Trends (IJSRET)
 - **Mô hình:** Logistic Regression
 - **Dataset:** Amazon Fine Food Reviews
-- **Link:** Không có link cụ thể
+- **Link:** [Sentimental Analysis on Amazon Fine Food Reviews](https://scholar.google.com/scholar?hl=vi&as_sdt=0%2C5&q=sentimental+analysis+on+amazon+fine+food+review&btnG=)
 
 ## Hiệu suất mô hình
 - **Accuracy:** Được báo cáo là cao nhất với Logistic Regression
-- **Loss:** Không đề cập cụ thể
 
 ## Kết quả chính
 - Phân tích đánh giá thực phẩm trên Amazon để xác định cảm xúc tích cực hoặc tiêu cực.
