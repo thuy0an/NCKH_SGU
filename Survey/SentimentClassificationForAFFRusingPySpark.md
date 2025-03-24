@@ -12,7 +12,7 @@
 | Thuật toán        | Accuracy | Precision  | Recall | F1-Score  |   
 |------------------|----------|--------|  ----------|--------| 
 | Logistic Regression | 87.61 | 86.48 | 88.21 | 87.23 |  
-| Naive Bayes          | 84.92 | [81.27] | [83.92] | [82.67] |
+| Naive Bayes          | 84.92 | 81.27 | 83.92 | 82.67 |
 
 ## Kết quả chính
 - Sử dụng PySpark để huấn luyện mô hình phân loại sentiment.  
