@@ -10,7 +10,7 @@
 - **Link:** [Sentimental Analysis on Amazon Fine Food Reviews](https://scholar.google.com/scholar?hl=vi&as_sdt=0%2C5&q=sentimental+analysis+on+amazon+fine+food+review&btnG=)
 
 ## Hiệu suất mô hình
-- **Accuracy:** Được báo cáo là cao nhất với Logistic Regression
+- **Accuracy:** Logistic Regression provides the best sentimental analysis result.
 
 ## Kết quả chính
 - Phân tích đánh giá thực phẩm trên Amazon để xác định cảm xúc tích cực hoặc tiêu cực.
