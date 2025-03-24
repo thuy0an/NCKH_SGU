@@ -1,5 +1,5 @@
 
-# Sentimental Analysis on Amazon Fine Food
+# Sentimental Analysis on Amazon Fine Food Reviews
 
 ## Thông tin bài báo
 - **Tác giả:** Kartikay Thakkar, Sidharth Sharma, Ujjwal Chhabra, Charu Gupta
