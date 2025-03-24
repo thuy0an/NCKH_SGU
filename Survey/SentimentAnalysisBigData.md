@@ -4,10 +4,10 @@
 ## Thông tin bài báo
 - **Tác giả:** Hafiz Muhammad Ahmed, Mazhar Javed Awan, Nabeel Sabir Khan, Awais Yasin, Hafiz Muhammad Faisal Shehzad
 - **Năm:** 2021
-- **Nguồn:** Ilkogretim Online - Elementary Education Online
+- **Nguồn:** University of Management and Technology, Lahore, Pakistan
 - **Mô hình:** Linear SVC, Logistic Regression, Naïve Bayes
 - **Dataset:** Amazon Fine Food Reviews
-- **Link:** [SSRN Abstract 3827110](https://ssrn.com/abstract=3827110)
+- **Link:** [Sentiment Analysis of Online Food Reviews using Big Data Analytics](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3827110)
 
 ## Hiệu suất mô hình
 - **Linear SVC:** Hiệu suất cao nhất
