@@ -13,8 +13,8 @@
 | Thuật toán        | Accuracy | Precision  | Recall | F1-Score  |   
 |------------------|----------|--------|  ----------|--------| 
 | Logistic Regression | 87.38 | 86.54 | 88.78 | 87.64 |  
-| Naive Bayes          | 83.43 | [82.35] | [88.78] | [85.54] |
-| LinearSVC         | 88.38 | [88.54] | [88.39] | [88.46] |
+| Naive Bayes          | 83.43 | 82.35 | 88.78 | 85.54 |
+| LinearSVC         | 88.38 | 88.54 | 88.39 | 88.46 |
 
 ## Kết quả chính
 - Sử dụng Apache Spark để xử lý dữ liệu lớn trong phân tích cảm xúc.
