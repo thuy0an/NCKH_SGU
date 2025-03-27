@@ -27,6 +27,15 @@ print(df.info())
 print(f'+ Contents')
 display.display(df.head(5))
 
+# Số lượng sản phẩm được đánh giá
+num_products = df['ProductId'].nunique()
+
+# Số lượng người dùng
+num_users = df['UserId'].nunique()
+
+print(f"Số lượng sản phẩm được đánh giá: {num_products}")
+print(f"Số lượng người dùng: {num_users}")
+
 
 ## Kiểm tra toàn vẹn dữ liệu (thiếu, trùng lặp)
 print(f'Kiểm tra tính toàn vẹn dữ liệu')
