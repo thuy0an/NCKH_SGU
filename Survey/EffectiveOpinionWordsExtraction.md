@@ -8,7 +8,6 @@
 - **Dataset**: Amazon Fine Food Reviews  
 - **Link**: [Effective Opinion Words Extraction for Food Reviews Classification
 ](https://www.researchgate.net/publication/343425341_Effective_Opinion_Words_Extraction_for_Food_Reviews_Classification)
-
 ##  Hiệu suất mô hình  
 | Mô hình | Accuracy |
 |---------|----------|
