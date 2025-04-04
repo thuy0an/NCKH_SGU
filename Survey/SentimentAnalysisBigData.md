@@ -29,11 +29,7 @@ Okay, đây là bản dịch và phân tích chi tiết bài báo khoa học "Se
 
 ---
 
-**Bản dịch tiếng Việt**
 
-**Phân tích Tình cảm (Sentiment Analysis) Đánh giá Thực phẩm Trực tuyến sử dụng Phân tích Dữ liệu Lớn (Big Data Analytics)**
-
-*Tác giả: Hafiz Muhammad Ahmed, Mazhar Javed Awan, Nabeel Sabir Khan, Awais Yasin, Hafiz Muhammad Faisal Shehzad*
 
 **Tóm tắt:** Ngày nay, phân tích tình cảm đã trở nên rất quan trọng, chủ yếu được sử dụng cho các bộ dữ liệu khổng lồ và hữu ích cho các nhà nghiên cứu trong việc áp dụng các phương pháp và kỹ thuật. Dữ liệu thực phẩm của Amazon đang tăng trưởng theo cấp số nhân và các hệ thống truyền thống không thể xử lý nó, vì vậy chúng tôi đã sử dụng Dữ liệu Lớn (Big Data) để khắc phục vấn đề này. Trong bài báo này, chúng tôi khám phá các phương pháp và kỹ thuật phân tích tình cảm khác nhau bằng cách sử dụng hệ thống xử lý dữ liệu Apache Spark cho các bộ dữ liệu lớn về đánh giá Fine Food của Amazon. Ba cơ chế được áp dụng có độ chính xác hơn 80% là Linear SVC, Logistic Regression và Naïve Bayes bằng cách sử dụng MLlib, thư viện ML của Apache Spark. Khi áp dụng các phương pháp này, chúng tôi nhận thấy rằng Linear SVC hoạt động hiệu quả hơn NB và Logistic Regression.
 
