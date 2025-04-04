@@ -37,7 +37,7 @@ hình.
 
 \- Chưa kiểm thử trên các tập dữ liệu khác để đánh giá độ tổng quát.
 
-Chắc chắn rồi, tôi sẽ dịch bài báo sang tiếng Việt và sau đó cung cấp một bản phân tích chi tiết.
+
 
 ---
 
@@ -57,8 +57,6 @@ Các mô hình được đánh giá bằng độ chính xác (accuracies). Chún
 Chúng tôi cũng thử nghiệm với sự kết hợp của các mô hình: kết hợp unigram với các đặc trưng của chúng tôi và kết hợp các đặc trưng của chúng tôi với hạt nhân cây. Cả hai sự kết hợp này đều vượt trội hơn mô hình cơ sở unigram hơn 4% cho cả hai nhiệm vụ phân loại. Trong bài báo này, chúng tôi trình bày phân tích đặc trưng sâu rộng về 100 đặc trưng mà chúng tôi đề xuất. Các thử nghiệm của chúng tôi cho thấy rằng các đặc trưng liên quan đến các đặc điểm cụ thể của đánh giá (biểu tượng cảm xúc, hashtag, v.v.) làm tăng giá trị cho bộ phân loại nhưng chỉ một cách cận biên. Các đặc trưng kết hợp cực tính trước đó của từ với các thẻ từ loại (parts-of-speech tags) của chúng là quan trọng nhất cho cả hai nhiệm vụ phân loại.
 
 Do đó, chúng tôi thấy rằng các công cụ xử lý ngôn ngữ tự nhiên tiêu chuẩn rất hữu ích ngay cả trong một thể loại khá khác biệt so với thể loại mà chúng được đào tạo (newswire). Hơn nữa, chúng tôi cũng chỉ ra rằng mô hình hạt nhân cây hoạt động gần như tốt như các mô hình dựa trên đặc trưng tốt nhất, mặc dù nó không yêu cầu kỹ thuật đặc trưng chi tiết. Chúng tôi sử dụng dữ liệu đánh giá được chú thích thủ công cho các thử nghiệm của mình. Một lợi thế của dữ liệu này, so với các bộ dữ liệu đã sử dụng trước đây, là các bài đánh giá được thu thập theo kiểu luồng (streaming fashion) và do đó đại diện cho một mẫu thực sự của các bài đánh giá thực tế về mặt sử dụng ngôn ngữ và nội dung. Bộ dữ liệu mới của chúng tôi có sẵn cho các nhà nghiên cứu khác. Chúng tôi giới thiệu hai tài nguyên có sẵn, đó là từ điển chú thích thủ công cho các biểu tượng cảm xúc và từ điển từ viết tắt được thu thập từ web với bản dịch tiếng Anh của hơn 5000 từ viết tắt thường được sử dụng.
-
-**(Trang 2)**
 
 **II. TẬP DỮ LIỆU**
 
@@ -189,20 +187,13 @@ Chúng tôi đã áp dụng bốn kỹ thuật vector hóa trên tập dữ li�
 
 Sử dụng phương pháp học máy có giám sát giúp thu được kết quả. Hồi quy Logistic, Naïve Bayes cho độ chính xác tốt nhất trong các mô hình học máy. Trong khi đó, LSTM đã thắng trong cuộc đua vì nó là một mô hình học sâu và cho độ chính xác 92.1%. Có những tình cảm thuộc đủ loại nhưng phần lớn áp đảo có tình cảm tích cực. Kết quả của chúng tôi được xác minh thêm bởi độ chính xác đáng kinh ngạc của bộ phân loại hồi quy Logistic.
 
-**TÀI LIỆU THAM KHẢO**
-[1]. https://www.kaggle.com/snap/amazon-fine-food-reviews
-[2]. Hutto, C. J. & Gilbert, E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. AAAI 2014
-... (các tài liệu tham khảo khác)
+
 
 ---
 
 **Phân tích Bài báo**
 
-Bài báo "Sentimental Analysis on Amazon Fine Food Reviews" trình bày một nghiên cứu thực nghiệm về việc áp dụng các kỹ thuật học máy và học sâu để phân loại tình cảm của các bài đánh giá sản phẩm thực phẩm trên Amazon.
 
-**1. Mục tiêu và Vấn đề:**
-*   **Mục tiêu chính:** Xây dựng và đánh giá các mô hình dự đoán tình cảm (tích cực/tiêu cực) và/hoặc điểm số (1-5) từ văn bản đánh giá của khách hàng.
-*   **Vấn đề giải quyết:** Khai thác thông tin dư luận từ khối lượng lớn dữ liệu văn bản phi cấu trúc (đánh giá sản phẩm) để hỗ trợ việc ra quyết định kinh doanh hoặc giám sát thương hiệu. Bài báo cũng đề cập đến việc xử lý dữ liệu bị lệch (nhiều đánh giá tích cực hơn).
 
 **2. Phương pháp luận:**
 *   **Dữ liệu:** Sử dụng bộ dữ liệu công khai và phổ biến "Amazon Fine Food Reviews" từ Kaggle, chứa khoảng 568.000 đánh giá. Dữ liệu được chia thành tập huấn luyện và kiểm tra dựa trên thời gian.
