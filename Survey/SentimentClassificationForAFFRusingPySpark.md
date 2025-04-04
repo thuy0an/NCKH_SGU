@@ -144,13 +144,5 @@ Phân tích tình cảm được sử dụng trong kinh doanh để tăng chất
 
 7.  **Hướng phát triển tương lai (đề xuất bởi tác giả):** Xây dựng từ điển miền (domain thesaurus) và sử dụng lọc cộng tác dựa trên người dùng để xây dựng hệ thống đề xuất thực phẩm, chuyển hướng khỏi mục tiêu phân loại tình cảm ban đầu.
 
-**So sánh với Bài báo đầu tiên:**
 
-*   **Tương đồng:** Cả hai bài báo đều giải quyết cùng một vấn đề (phân tích tình cảm đánh giá Amazon Food), sử dụng cùng bộ dữ liệu gốc, và áp dụng Apache Spark/MLlib với các thuật toán tương tự (LR, NB, LSVC - mặc dù bài 2 không thực sự báo cáo LSVC).
-*   **Khác biệt:**
-    *   **Cách xử lý nhãn:** Bài 1 chuẩn hóa dựa trên "helpfulness" và cân bằng lớp, bài 2 loại bỏ điểm 3 và tạo nhãn nhị phân dựa trên điểm <3/>3.
-    *   **Kích thước dữ liệu:** Bài 1 sử dụng tập dữ liệu lớn hơn đáng kể sau khi cân bằng.
-    *   **Kết quả LSVC:** Bài 1 báo cáo LSVC hoạt động tốt nhất, bài 2 đề cập LSVC nhưng không báo cáo kết quả.
-    *   **Nhấn mạnh:** Bài 1 tập trung vào so sánh hiệu suất chính xác của các mô hình. Bài 2 cố gắng nhấn mạnh lợi ích tốc độ của khung Big Data nhưng thiếu bằng chứng.
-    *   **Tính nhất quán:** Bài 1 nhất quán hơn trong việc mô tả và báo cáo kết quả. Bài 2 có mâu thuẫn nội bộ rõ ràng.
 
