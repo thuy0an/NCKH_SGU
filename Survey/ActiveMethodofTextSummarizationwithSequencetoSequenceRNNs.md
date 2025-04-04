@@ -32,7 +32,7 @@
 \- Không thể xử lý văn bản dài một cách hiệu quả.
 
 \- Cần thời gian huấn luyện dài và phần cứng mạnh.
----
+
 
 Tóm tắt (Abstract)
 
