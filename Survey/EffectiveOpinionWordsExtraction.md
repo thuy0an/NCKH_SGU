@@ -163,7 +163,6 @@ Bài báo đã giới thiệu một tập hợp các từ ngữ quan điểm và
 
 Với những thành tựu của kỹ thuật học sâu, nghiên cứu trong tương lai có thể tận dụng để đề xuất các mô hình phức tạp hơn nhằm cải thiện khả năng dự đoán.
 
-*   **Giải thích chi tiết:** Phần kết luận tóm tắt lại đóng góp chính của bài báo là xác định và đánh giá các từ ngữ quan trọng cho việc phân loại tình cảm trong đánh giá thực phẩm, sử dụng các mô hình học máy tập hợp. Đồng thời, chỉ ra tiềm năng ứng dụng và hướng phát triển sử dụng học sâu trong tương lai.
 
 ---
 
