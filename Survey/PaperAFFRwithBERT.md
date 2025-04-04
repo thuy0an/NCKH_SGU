@@ -47,7 +47,6 @@ Theo các báo cáo (Financesonline, Pew Research Center), phần lớn người
 
 Nghiên cứu này tập trung vào việc xây dựng một mô hình để **dự đoán điểm số đánh giá dựa trên nội dung văn bản**. Nhóm tác giả sử dụng bộ dữ liệu "Amazon Fine Food Review" và mô hình NLP nổi tiếng là **BERT**. Bài báo được cấu trúc gồm: Mô tả dữ liệu và quá trình xử lý (Phần 2), Phân tích mô hình (Phần 3), và Kết luận (Phần 4).
 
-*   **Giải thích chi tiết:** Phần giới thiệu nhấn mạnh xu hướng sử dụng đánh giá trực tuyến ngày càng tăng. Nó xác định rõ mục tiêu của nghiên cứu: không chỉ phân loại đánh giá là tích cực/tiêu cực (như bài báo trước), mà là dự đoán chính xác *điểm số cụ thể* (1-5) mà người dùng đã cho, chỉ dựa vào phần bình luận bằng chữ của họ. Mô hình được chọn là BERT, một công cụ mạnh mẽ trong NLP.
 
 ---
 
@@ -82,7 +81,7 @@ Nghiên cứu này tập trung vào việc xây dựng một mô hình để **d
 
 **(Hình 1 (trang 4): Biểu đồ phân phối điểm số ban đầu, cho thấy sự mất cân bằng)**
 
-*   **Giải thích chi tiết:** Phần này mô tả rất kỹ lưỡng quá trình chuẩn bị dữ liệu, bao gồm xử lý giá trị thiếu, loại bỏ dữ liệu không phù hợp (ngôn ngữ khác, trùng lặp, dấu câu, đánh giá cũ, đánh giá quá ngắn), và đặc biệt là giải quyết vấn đề mất cân bằng dữ liệu nghiêm trọng bằng cách lấy mẫu lại để tạo ra một bộ dữ liệu cân bằng hơn cho việc huấn luyện mô hình. Đây là những bước cực kỳ quan trọng để đảm bảo chất lượng và độ tin cậy của mô hình học máy.
+* Phần này mô tả rất kỹ lưỡng quá trình chuẩn bị dữ liệu, bao gồm xử lý giá trị thiếu, loại bỏ dữ liệu không phù hợp (ngôn ngữ khác, trùng lặp, dấu câu, đánh giá cũ, đánh giá quá ngắn), và đặc biệt là giải quyết vấn đề mất cân bằng dữ liệu nghiêm trọng bằng cách lấy mẫu lại để tạo ra một bộ dữ liệu cân bằng hơn cho việc huấn luyện mô hình. Đây là những bước cực kỳ quan trọng để đảm bảo chất lượng và độ tin cậy của mô hình học máy.
 
 ---
 
