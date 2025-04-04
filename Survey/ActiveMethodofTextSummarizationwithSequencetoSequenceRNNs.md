@@ -36,7 +36,6 @@
 
 Tóm tắt (Abstract)
 
-Bài báo này giải quyết vấn đề tóm tắt văn bản tự động, một lĩnh vực quan trọng trong Xử lý Ngôn ngữ Tự nhiên (NLP). Mục tiêu chính là tạo ra các bản tóm tắt trừu tượng - tức là bản tóm tắt được tạo ra bằng ngôn từ của mô hình, có thể chứa từ ngữ không có trong văn bản gốc, thay vì chỉ trích xuất câu - sao cho ngắn gọn, mạch lạc và dễ hiểu.
 
 Nhóm tác giả đã sử dụng bộ dữ liệu "Amazon Fine Food Reviews" từ Kaggle. Họ áp dụng mô hình sequence-to-sequence (Seq2Seq), một kiến trúc phổ biến trong dịch máy và các tác vụ tạo văn bản khác. Cụ thể, mô hình bao gồm:
 * Bộ mã hóa (Encoder): Sử dụng Mạng Nơ-ron Hồi quy (RNN) hai chiều (bi-directional) với các đơn vị LSTM (Long Short-Term Memory) để đọc và hiểu văn bản đầu vào (đánh giá sản phẩm).
