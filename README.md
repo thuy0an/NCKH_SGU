@@ -30,4 +30,4 @@ Việc hiểu được đánh giá của khách hàng giúp doanh nghiệp cải
 ### Công nghệ sử dụng
 - **Ngôn ngữ:** Python  
 - **Thư viện chính:**  
-- `sklearn`, `NLTK`, `seaborn`, `matplotlib`, `pandas`, `numpy'
+- `sklearn`, `NLTK`, `seaborn`, `matplotlib`, `pandas`, `numpy`
