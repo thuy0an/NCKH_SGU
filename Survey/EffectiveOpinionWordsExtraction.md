@@ -103,7 +103,7 @@ Phương pháp đề xuất bao gồm các thành phần chính được minh h�
     *   Hai kiến trúc chính:
         *   **PV-DM (Distributed Memory):** Tương tự CBOW trong Word2vec, dự đoán từ mục tiêu dựa trên các từ xung quanh và vector đại diện cho tài liệu.
         *   **PV-DBOW (Distributed Bag of Words):** Tương tự Skip-gram, dự đoán các từ trong ngữ cảnh dựa trên vector tài liệu (thường nhanh hơn và ít tốn bộ nhớ hơn).
-    *   Trong bài báo này, Doc2vec được sử dụng để xây dựng vector đặc trưng cho mỗi đánh giá dựa trên mô hình trong thư viện **Gensim**. *Lưu ý: Cách thức chính xác Doc2vec kết hợp với "Opinion Words" không hoàn toàn rõ ràng từ mô tả và Hình 1. Có thể Doc2vec được áp dụng cho toàn bộ văn bản đã tiền xử lý, và "Opinion Words" được dùng để phân tích độ quan trọng sau này.*
+  
 
 *   **E. Phân loại Tình cảm (Sentiment Classification):**
     *   Sử dụng các thuật toán học máy tập hợp mạnh mẽ để phân loại các vector đánh giá thành "tích cực" hoặc "tiêu cực".
