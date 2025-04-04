@@ -31,4 +31,4 @@
 
 \- Không thể xử lý văn bản dài một cách hiệu quả.
 
-\- CCần thời gian huấn luyện dài và phần cứng mạnh.
+\- Cần thời gian huấn luyện dài và phần cứng mạnh.
