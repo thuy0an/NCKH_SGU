@@ -1,4 +1,4 @@
-# 🧪 Experiment Log - [YYYY-MM-DD]
+# 🧪 Experiment Log - [DD-MM-YYYY]
 
 ## 🎯 Mục tiêu
 - [Ghi rõ mục tiêu thực nghiệm của ngày hôm nay.]
