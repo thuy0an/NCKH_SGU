@@ -3,7 +3,7 @@
 ### 1. Metrics trong bài toán phân loại (Classification)  
 - **Accuracy**: Độ chính xác, tỉ lệ dự đoán đúng trên tổng số mẫu.  
 - **Loss**: Hàm mất mát, **cross-entropy loss**, đo sự khác biệt giữa dự đoán của mô hình và giá trị thực tế (**ground truth**).  
-- **Precision**: Độ chính xác theo lớp dương, số dự đoán là tích cực bao nhiêu là đúng.  
+- **Precision**: Độ chính xác theo lớp dương, số dự đoán là tích cực bao nhiêu là đúng. 
 - **Recall**: Khả năng phát hiện mẫu dương, trong số tất cả mẫu thực sự là tích cực, mô hình dự đoán đúng bao nhiêu?  
 - **F1-score**: Trung bình hài hòa giữa **Precision** và **Recall**.  
 - **AUC-ROC**: Đánh giá khả năng mô hình phân biệt giữa hai lớp.  
