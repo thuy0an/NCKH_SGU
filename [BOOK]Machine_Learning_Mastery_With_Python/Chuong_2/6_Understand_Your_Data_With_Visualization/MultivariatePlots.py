@@ -3,7 +3,8 @@ from matplotlib import pyplot
 from pandas import read_csv 
 import numpy 
 filename = 'pima-indians-diabetes.data.csv' 
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class'] data = read_csv(filename, names=names) 
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+data = read_csv(filename, names=names) 
 correlations = data.corr() 
 # plot correlation matrix 
 fig = pyplot.figure() 
@@ -21,7 +22,8 @@ from matplotlib import pyplot
 from pandas import read_csv 
 import numpy 
 filename = 'pima-indians-diabetes.data.csv' 
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class'] data = read_csv(filename, names=names) 
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+data = read_csv(filename, names=names) 
 correlations = data.corr() 
 # plot correlation matrix 
 fig = pyplot.figure() 
@@ -34,6 +36,7 @@ from matplotlib import pyplot
 from pandas import read_csv 
 from pandas.tools.plotting import scatter_matrix 
 filename = "pima-indians-diabetes.data.csv" 
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class'] data = read_csv(filename, names=names) 
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+data = read_csv(filename, names=names) 
 scatter_matrix(data) 
 pyplot.show()

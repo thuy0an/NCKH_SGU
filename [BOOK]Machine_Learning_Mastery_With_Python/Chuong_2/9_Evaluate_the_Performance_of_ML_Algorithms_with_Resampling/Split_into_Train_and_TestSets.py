@@ -3,7 +3,8 @@ from pandas import read_csv
 from sklearn.model_selection import train_test_split 
 from sklearn.linear_model import LogisticRegression 
 filename = 'pima-indians-diabetes.data.csv' 
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class'] dataframe = read_csv(filename, names=names) 
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+dataframe = read_csv(filename, names=names) 
 array = dataframe.values 
 X = array[:,0:8] 
 Y = array[:,8] 

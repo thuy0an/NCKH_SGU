@@ -3,7 +3,8 @@ from sklearn.preprocessing import Normalizer
 from pandas import read_csv 
 from numpy import set_printoptions 
 filename = 'pima-indians-diabetes.data.csv' 
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class'] dataframe = read_csv(filename, names=names) 
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+dataframe = read_csv(filename, names=names) 
 array = dataframe.values 
 # separate array into input and output components 
 X = array[:,0:8] 

@@ -4,7 +4,8 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score 
 from sklearn.linear_model import LogisticRegression 
 filename = 'pima-indians-diabetes.data.csv' 
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class'] dataframe = read_csv(filename, names=names) 
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+dataframe = read_csv(filename, names=names) 
 array = dataframe.values 
 X = array[:,0:8] 
 Y = array[:,8] 
@@ -19,7 +20,8 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score 
 from sklearn.linear_model import LogisticRegression 
 filename = 'pima-indians-diabetes.data.csv' 
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class'] dataframe = read_csv(filename, names=names) 
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+dataframe = read_csv(filename, names=names) 
 array = dataframe.values 
 X = array[:,0:8] 
 Y = array[:,8] 
@@ -34,7 +36,8 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score 
 from sklearn.linear_model import LogisticRegression 
 filename = 'pima-indians-diabetes.data.csv' 
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class'] dataframe = read_csv(filename, names=names) 
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+dataframe = read_csv(filename, names=names) 
 array = dataframe.values 
 X = array[:,0:8] 
 Y = array[:,8] 
@@ -50,7 +53,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression 
 from sklearn.metrics import confusion_matrix 
 filename = 'pima-indians-diabetes.data.csv' 
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class'] dataframe = read_csv(filename, names=names) 
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+dataframe = read_csv(filename, names=names) 
 array = dataframe.values 
 X = array[:,0:8] 
 Y = array[:,8] 
@@ -68,7 +72,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression 
 from sklearn.metrics import classification_report 
 filename = 'pima-indians-diabetes.data.csv' 
-names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class'] dataframe = read_csv(filename, names=names) 
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+dataframe = read_csv(filename, names=names) 
 array = dataframe.values 
 X = array[:,0:8] 
 Y = array[:,8] 
