@@ -66,11 +66,13 @@ stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
 
 def preprocess_text(text):
-    text = text.lower()  # Chuyển chữ thường
-    text = re.sub(r'<br\s*/?>', ' ', text)  # Xóa thẻ <br> hoặc <br/>
-    text = re.sub(r'[^\w\s]', '', text)  # Xóa dấu câu
-    words = word_tokenize(text)  # Tách từ
-    words = [lemmatizer.lemmatize(w) for w in words if w not in stop_words]  # Xóa stopwords + lemmatization
+    text = text.lower()
+    text = re.sub(r'<br\s*/?>', ' ', text)
+    text = re.sub(r'[^\w\s]', '', text)
+    text = re.sub(r'\d+', '', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    words = word_tokenize(text)
+    words = [lemmatizer.lemmatize(w) for w in words if w not in stop_words]
     return " ".join(words)
 
 train_check['Text_Cleaned'] = train_check['Text'].map(preprocess_text)
@@ -91,7 +93,7 @@ print(preprocess_text(example))
 
 # Trích xuất đặc trưng BoW
 print("\nBắt đầu trích xuất đặc trưng BoW...")
-vectorizer = CountVectorizer(max_features=1000)
+vectorizer = CountVectorizer(max_features=5000)
 bow_matrix = vectorizer.fit_transform(train_check['Text_Cleaned'])
 
 # Hiển thị thông tin của 5 dòng đã trích xuất đặc trưng BoW
