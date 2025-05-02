@@ -1,0 +1,5 @@
+Kết quả SVM:
+Accuracy: 0.734
+Precision: 0.695
+Recall: 0.734
+F1-score: 0.691

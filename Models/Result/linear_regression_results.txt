@@ -1,0 +1,5 @@
+Kết quả Linear Regression:
+Accuracy: 0.436
+Precision: 0.677
+Recall: 0.436
+F1-score: 0.484

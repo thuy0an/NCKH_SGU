@@ -29,10 +29,8 @@ lemmatizer = WordNetLemmatizer()
 # 1. Đọc dữ liệu đã xử lý
 train_preprocessed = pd.read_csv('NCKH_SGU/TrichXuatDacTrung/TrainPreProcess.csv')
 test_data = pd.read_csv('NCKH_SGU/TrainAndTestData/test.csv')
-feature_bow = pd.read_csv('NCKH_SGU/TrichXuatDacTrung/FeatureBoW.csv')
 
-X_train = feature_bow  
-y_train = train_preprocessed['Score'] 
+
 
 def preprocess_Text(text):
     text = text.lower()
@@ -48,15 +46,16 @@ def preprocess_Text(text):
 test_data['Text_Cleaned'] = test_data['Text'].apply(preprocess_Text)
 
 # Trích xuất đặc trưng BoW cho test
-vectorizer = CountVectorizer()
+vectorizer = CountVectorizer(max_features=5000)
 vectorizer.fit(train_preprocessed['Text_Cleaned'])
 X_train = vectorizer.transform(train_preprocessed['Text_Cleaned'])
+y_train = train_preprocessed['Score'] 
 X_test = vectorizer.transform(test_data['Text_Cleaned'])
 y_test = test_data['Score']
 
 # 3. Huấn luyện và đánh giá mô hình Logistic Regression
 print("Huấn luyện mô hình Logistic Regression...")
-lr_model = LogisticRegression(max_iter=5000, random_state=42)
+lr_model = LogisticRegression(solver='saga' ,max_iter=5000, random_state=42)
 lr_model.fit(X_train, y_train)
 
 # Đánh giá mô hình Logistic Regression
