@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 import joblib
 import os
 import re
@@ -30,8 +30,6 @@ lemmatizer = WordNetLemmatizer()
 train_preprocessed = pd.read_csv('NCKH_SGU/TrichXuatDacTrung/TrainPreProcess.csv')
 test_data = pd.read_csv('NCKH_SGU/TrainAndTestData/test.csv')
 
-
-
 def preprocess_Text(text):
     text = text.lower()
     text = re.sub(r'<br\s*/?>', ' ', text)
@@ -45,8 +43,16 @@ def preprocess_Text(text):
 # Áp dụng tiền xử lý cho test
 test_data['Text_Cleaned'] = test_data['Text'].apply(preprocess_Text)
 
-# Trích xuất đặc trưng BoW cho test
-vectorizer = CountVectorizer(max_features=10000)
+# Trích xuất đặc trưng TF-IDF
+vectorizer = TfidfVectorizer(
+    max_features=10000,
+    ngram_range=(1, 2),
+    min_df=5,
+    max_df=0.5,
+    sublinear_tf=True,
+    norm='l2',
+    smooth_idf=True
+)
 vectorizer.fit(train_preprocessed['Text_Cleaned'])
 X_train = vectorizer.transform(train_preprocessed['Text_Cleaned'])
 y_train = train_preprocessed['Score'] 
@@ -67,15 +73,15 @@ result_dir = os.path.join(os.getcwd(), 'Result')
 os.makedirs(result_dir, exist_ok=True)
 
 # Save Logistic Regression results
-lr_result_path = os.path.join(result_dir, 'logistic_regression_results.txt')
+lr_result_path = os.path.join(result_dir, 'logistic_regression_tfidf_results.txt')
 with open(lr_result_path, 'w', encoding='utf-8') as f:
-    f.write("Kết quả Logistic Regression:\n")
+    f.write("Kết quả Logistic Regression (TF-IDF):\n")
     f.write(f"Accuracy: {accuracy_score(y_test, lr_predictions):.3f}\n")
     f.write(f"Precision: {lr_report['weighted avg']['precision']:.3f}\n")
     f.write(f"Recall: {lr_report['weighted avg']['recall']:.3f}\n")
     f.write(f"F1-score: {lr_report['weighted avg']['f1-score']:.3f}\n")
 
-print("\nKết quả Logistic Regression:")
+print("\nKết quả Logistic Regression (TF-IDF):")
 print(f"Accuracy: {accuracy_score(y_test, lr_predictions):.3f}")
 print(f"Precision: {lr_report['weighted avg']['precision']:.3f}")
 print(f"Recall: {lr_report['weighted avg']['recall']:.3f}")
@@ -91,16 +97,16 @@ nb_predictions = nb_model.predict(X_test)
 nb_report = classification_report(y_test, nb_predictions, output_dict=True)
 
 # Save Naive Bayes results
-nb_result_path = os.path.join(result_dir, 'naive_bayes_results.txt')
+nb_result_path = os.path.join(result_dir, 'naive_bayes_tfidf_results.txt')
 with open(nb_result_path, 'w', encoding='utf-8') as f:
-    f.write("Kết quả Naive Bayes:\n")
+    f.write("Kết quả Naive Bayes (TF-IDF):\n")
     f.write(f"Accuracy: {accuracy_score(y_test, nb_predictions):.3f}\n")
     f.write(f"Precision: {nb_report['weighted avg']['precision']:.3f}\n")
     f.write(f"Recall: {nb_report['weighted avg']['recall']:.3f}\n")
     f.write(f"F1-score: {nb_report['weighted avg']['f1-score']:.3f}\n")
 
-print("\nKết quả Naive Bayes:")
+print("\nKết quả Naive Bayes (TF-IDF):")
 print(f"Accuracy: {accuracy_score(y_test, nb_predictions):.3f}")
 print(f"Precision: {nb_report['weighted avg']['precision']:.3f}")
 print(f"Recall: {nb_report['weighted avg']['recall']:.3f}")
-print(f"F1-score: {nb_report['weighted avg']['f1-score']:.3f}")
+print(f"F1-score: {nb_report['weighted avg']['f1-score']:.3f}") 

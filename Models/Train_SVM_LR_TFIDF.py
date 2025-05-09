@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.svm import LinearSVC
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
@@ -38,8 +38,16 @@ def preprocess_Text(text):
 # Áp dụng tiền xử lý cho test
 test_data['Text_Cleaned'] = test_data['Text'].apply(preprocess_Text)
 
-# Trích xuất đặc trưng BoW cho test
-vectorizer = CountVectorizer(max_features=10000)
+# Trích xuất đặc trưng TF-IDF
+vectorizer = TfidfVectorizer(
+    max_features=10000,
+    ngram_range=(1, 2),
+    min_df=5,
+    max_df=0.5,
+    sublinear_tf=True,
+    norm='l2',
+    smooth_idf=True
+)
 vectorizer.fit(train_preprocessed['Text_Cleaned'])
 X_train = vectorizer.transform(train_preprocessed['Text_Cleaned'])
 y_train = train_preprocessed['Score']
@@ -69,22 +77,22 @@ svm_model.fit(X_train, y_train)
 svm_predictions = svm_model.predict(X_test)
 svm_report = classification_report(y_test, svm_predictions, output_dict=True)
 
-svm_result_path = os.path.join(result_dir, 'svm_bow_results.txt')
+svm_result_path = os.path.join(result_dir, 'svm_tfidf_results.txt')
 with open(svm_result_path, 'w', encoding='utf-8') as f:
-    f.write("Kết quả SVM:\n")
+    f.write("Kết quả SVM (TF-IDF):\n")
     f.write(f"Accuracy: {accuracy_score(y_test, svm_predictions):.3f}\n")
     f.write(f"Precision: {svm_report['weighted avg']['precision']:.3f}\n")
     f.write(f"Recall: {svm_report['weighted avg']['recall']:.3f}\n")
     f.write(f"F1-score: {svm_report['weighted avg']['f1-score']:.3f}\n")
 
-print("\nKết quả SVM:")
+print("\nKết quả SVM (TF-IDF):")
 print(f"Accuracy: {accuracy_score(y_test, svm_predictions):.3f}")
 print(f"Precision: {svm_report['weighted avg']['precision']:.3f}")
 print(f"Recall: {svm_report['weighted avg']['recall']:.3f}")
 print(f"F1-score: {svm_report['weighted avg']['f1-score']:.3f}")
 
 # 4. Huấn luyện và đánh giá mô hình Linear Regression
-print("\nuấn luyện mô hình Linear Regression...")
+print("\nHuấn luyện mô hình Linear Regression...")
 lr_model = LinearRegression()
 lr_model.fit(X_train, y_train)
 
@@ -93,17 +101,16 @@ lr_predictions_rounded = np.round(lr_predictions).astype(int)
 
 lr_report = classification_report(y_test, lr_predictions_rounded, output_dict=True)
 
-lr_result_path = os.path.join(result_dir, 'linear_regression_bow_results.txt')
+lr_result_path = os.path.join(result_dir, 'linear_regression_tfidf_results.txt')
 with open(lr_result_path, 'w', encoding='utf-8') as f:
-    f.write("Kết quả Linear Regression:\n")
+    f.write("Kết quả Linear Regression (TF-IDF):\n")
     f.write(f"Accuracy: {accuracy_score(y_test, lr_predictions_rounded):.3f}\n")
     f.write(f"Precision: {lr_report['weighted avg']['precision']:.3f}\n")
     f.write(f"Recall: {lr_report['weighted avg']['recall']:.3f}\n")
     f.write(f"F1-score: {lr_report['weighted avg']['f1-score']:.3f}\n")
 
-
-print("\nKết quả Linear Regression:")
+print("\nKết quả Linear Regression (TF-IDF):")
 print(f"Accuracy: {accuracy_score(y_test, lr_predictions_rounded):.3f}")
 print(f"Precision: {lr_report['weighted avg']['precision']:.3f}")
 print(f"Recall: {lr_report['weighted avg']['recall']:.3f}")
-print(f"F1-score: {lr_report['weighted avg']['f1-score']:.3f}")
+print(f"F1-score: {lr_report['weighted avg']['f1-score']:.3f}") 

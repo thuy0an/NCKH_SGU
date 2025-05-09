@@ -1,0 +1,5 @@
+Kết quả Naive Bayes:
+Accuracy: 0.680
+Precision: 0.673
+Recall: 0.680
+F1-score: 0.676

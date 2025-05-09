@@ -1,0 +1,5 @@
+Kết quả Naive Bayes (TF-IDF):
+Accuracy: 0.699
+Precision: 0.659
+Recall: 0.699
+F1-score: 0.623

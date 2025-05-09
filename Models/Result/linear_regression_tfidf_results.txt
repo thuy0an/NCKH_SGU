@@ -1,0 +1,5 @@
+Kết quả Linear Regression (TF-IDF):
+Accuracy: 0.508
+Precision: 0.697
+Recall: 0.508
+F1-score: 0.554

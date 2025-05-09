@@ -1,0 +1,5 @@
+Kết quả Logistic Regression (TF-IDF):
+Accuracy: 0.755
+Precision: 0.724
+Recall: 0.755
+F1-score: 0.727

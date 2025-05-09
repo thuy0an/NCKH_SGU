@@ -1,0 +1,5 @@
+Kết quả Logistic Regression:
+Accuracy: 0.742
+Precision: 0.708
+Recall: 0.742
+F1-score: 0.712

@@ -1,0 +1,5 @@
+Kết quả SVM (TF-IDF):
+Accuracy: 0.747
+Precision: 0.711
+Recall: 0.747
+F1-score: 0.706
